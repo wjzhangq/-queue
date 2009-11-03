@@ -1,0 +1,13 @@
+Install
+	cd queue
+	make
+Usage:
+-h           print this help and exit
+-p <num>     UDP port number to linsten on
+-d           run as daemon
+-l <ip_addr> interface to listen on (default: INADDR_ANY)
+-L           only allow message from local address
+-c <num>     max concurrent worker number (>1)
+-n <num>     max queue size (>1)
+-e <exepath> full path of script that handle received id
+-v           verbose
